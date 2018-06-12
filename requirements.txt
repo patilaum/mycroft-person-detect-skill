@@ -1,0 +1,5 @@
+install object_detection from tensorflow
+tensorflow > =1.4.0
+opencv 
+
+
