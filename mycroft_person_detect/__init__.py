@@ -42,7 +42,7 @@ get_ipython().run_line_magic('matplotlib', 'inline')
 
 import object_detection
 
-MODEL_NAME = '/home/aum/sharingub/royals_graph'
+MODEL_NAME = 'detection_graph/'
 
 PATH_TO_CKPT = MODEL_NAME + '/frozen_inference_graph.pb'
 
