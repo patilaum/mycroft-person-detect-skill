@@ -42,7 +42,7 @@ get_ipython().run_line_magic('matplotlib', 'inline')
 
 import object_detection
 
-MODEL_NAME = '/detection_graph'
+MODEL_NAME = '/opt/mycroft/skills/mycroft-person-detect-skill.patilaum/detection_graph'
 
 PATH_TO_CKPT = MODEL_NAME + '/frozen_inference_graph.pb'
 
@@ -120,11 +120,11 @@ class PersonDetectSkill(MycroftSkill):
        
         
         if count > 1:
-            self.speak_dialog("There are {} persons in front of me" .format(count))
+            self.speak("There are {} persons in front of me" .format(count))
         if count == 0:
-            self.speak_dialog("I cant see anyone")
+            self.speak("I cant see anyone")
         if count == 1:
-            self.speak_dialog("There is one person in front of me")
+            self.speak("There is one person in front of me")
         
     
     def stop(self):
